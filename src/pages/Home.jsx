@@ -1,9 +1,9 @@
-import Iwatch from "../components/Iwatch";
+import HomeIwatch from "../components/HomeIwatch";
 
 export default function Home() {
   return (
     <div className="relative">
-      <Iwatch/>
+      <HomeIwatch/>
       <h1>hello</h1>
     </div>
   )
