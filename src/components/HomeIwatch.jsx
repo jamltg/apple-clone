@@ -3,7 +3,7 @@ import iwatchs9 from '../assets/iwatchs9.jpg';
 export default function HomeIwatch() {
   return (
       <div className="relative bg-black">
-        <div className='relative text-center z-10 pt-8'>
+        <div className='relative text-center z-10 pt-14'>
           <h1 className='text-white text-4xl lg:text-6xl font-semibold'>Apple Watch Series 9</h1>
           <h2 className='text-white text-xl lg:text-2xl tracking-tight mt-2'>Smarter. Brighter. Mightier.</h2>
           <p className='text-lg lg:text-xl text-[rgb(134,134,139)] mt-3'>Available starting 5.15</p>
