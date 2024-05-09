@@ -1,4 +1,4 @@
-import iwatch2 from '../assets/iwatch2.jpg';
+import iwatchs9 from '../assets/iwatchs9.jpg';
 
 export default function HomeIwatch() {
   return (
@@ -14,7 +14,7 @@ export default function HomeIwatch() {
         </div>
         <div className='flex justify-center w-full'>
           <img
-            src={iwatch2}
+            src={iwatchs9}
             alt="Apple Watch"
             className='h-[300px] lg:h-[400px]'
           />
