@@ -1,7 +1,7 @@
 import GridIphone from "./GridIphone";
 import GridAirpods from "./GridAirpods";
 import GridIwatch from "./GridIwatch";
-import GridMacbook from "./GridMacbook";
+import GridWwdc from "./GridWwdc";
 
 export default function HomeGrid() {
   return (
@@ -9,7 +9,7 @@ export default function HomeGrid() {
       <GridIphone/>
       <GridIwatch/>
       <GridAirpods/>
-      <GridMacbook/>
+      <GridWwdc/>
     </div>
   )
 }

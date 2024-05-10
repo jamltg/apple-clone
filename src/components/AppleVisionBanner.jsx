@@ -1,7 +1,6 @@
-import { IoIosArrowForward } from "react-icons/io";
 import applevision from '../assets/applevision.jpg';
 
-export default function HomeBanner() {
+export default function AppleVisionBanner() {
   return (
     <div className='bg-[rgb(251,251,251)] py-6'>
       <h1 className='text-4xl text-center font-bold p-4 md:text-6xl'>Apple Vision Pro</h1>
