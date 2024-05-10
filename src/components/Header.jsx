@@ -4,6 +4,7 @@ import { Cross as Hamburger } from 'hamburger-react'
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion"
 import HamburgerOptions from "./HamburgerOptions";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:items-center lg:gap-6 lg:text-sm lg:font-semibold">
             <li>Store</li>
-            <li>Mac</li>
+            <Link to="/macbook-air"><li>Mac</li></Link>
             <li>iPad</li>
             <li>iPhone</li>
             <li>Watch</li>
