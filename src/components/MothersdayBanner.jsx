@@ -1,8 +1,9 @@
 import apple_logo from '../assets/apple_logo.png'
+import design from '../assets/design.png'
 
 export default function MothersdayBanner() {
   return (
-    <div className="w-full bg-[rgb(251,251,251)] pb-10">
+    <div className="w-full pb-10" style={{backgroundImage:`url(${design})`, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
       <div className="flex justify-center">
         <img 
           src={apple_logo}
