@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
           <span>All rights reserved.</span>
         </div>
-        <ul className="flex pt-2 gap-1"> 
+        <ul className="flex flex-wrap"> 
           <li className="text-xs border-r-2 px-1">Privacy Policy</li>
           <li className="text-xs border-r-2 px-1">Terms of Use</li>
           <li className="text-xs border-r-2 px-1">Sales and Refunds</li>
