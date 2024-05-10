@@ -1,12 +1,12 @@
-import AppleVisionBanner from "../components/AppleVisionBanner";
 import HomeGrid from "../components/HomeGrid";
 import HomeIwatch from "../components/HomeIwatch";
+import MothersdayBanner from "../components/MothersdayBanner";
 
 export default function Home() {
   return (
     <div className="relative bg-white">
       <HomeIwatch/>
-      <AppleVisionBanner/>
+      <MothersdayBanner/>
       <HomeGrid/>
     </div>
   )
