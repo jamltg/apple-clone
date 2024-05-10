@@ -2,6 +2,7 @@ import { IoLogoApple, IoBagOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { Cross as Hamburger } from 'hamburger-react'
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion"
 import HamburgerOptions from "./HamburgerOptions";
 
 export default function Header() {
@@ -19,6 +20,10 @@ export default function Header() {
       document.body.classList.remove('no-scroll');
     };
   }, [isOpen]);
+
+  const toggleHamburger = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="bg-[rgb(24,24,24)]">
@@ -53,7 +58,19 @@ export default function Header() {
         </ul>
       </div>
       <div>
-        {isOpen && <HamburgerOptions/>}
+        <AnimatePresence>
+          {isOpen && 
+            <motion.div
+              key="hamburgerOptions"
+              initial={{ y: -100 }}
+              animate={{ y: 0 }}
+              exit={{ y: -100, opacity: 0, transition: { duration: 0.2 } }}
+              transition={{ type: 'spring', stiffness: 100 }}
+            >
+              <HamburgerOptions toggleHamburger={toggleHamburger}/>
+            </motion.div>
+          }
+        </AnimatePresence>
       </div> 
     </div>
   )
