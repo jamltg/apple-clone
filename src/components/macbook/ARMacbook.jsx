@@ -6,7 +6,7 @@ export default function ARMacbook() {
   const [color, setColor] = useState('midnight')
 
   return (
-    <div className="px-4 bg-white">
+    <div className="px-4 bg-[rgb(251,251,251)]">
       <div className="max-w-[1240px] h-full mx-auto bg-[rgb(251,251,251)] pt-20 w-full">
         <div className="max-w-[1000px] mx-auto flex flex-col justify-between items-center px-0 gap-8 md:px-8 md:flex-row">
           <div className="w-[80%] md:w-[45%]">
