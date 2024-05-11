@@ -2,7 +2,7 @@ import { useState } from "react"
 import ARChooseColor from "./ARChooseColor";
 import ARImage from "./ARImage";
 
-export default function MacbookAR() {
+export default function ARMacbook() {
   const [color, setColor] = useState('midnight')
 
   return (

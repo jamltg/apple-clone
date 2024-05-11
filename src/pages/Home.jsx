@@ -1,3 +1,4 @@
+import HomeCarousel from "../components/HomeCarousel";
 import HomeGrid from "../components/HomeGrid";
 import HomeIwatch from "../components/HomeIwatch";
 import MothersdayBanner from "../components/MothersdayBanner";
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeIwatch/>
       <MothersdayBanner/>
       <HomeGrid/>
+      <HomeCarousel/>
     </div>
   )
 }
