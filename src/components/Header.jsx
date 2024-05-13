@@ -31,25 +31,33 @@ export default function Header() {
       <div className="h-20 w-full px-4">
         <ul className="h-full flex justify-between items-center lg:justify-center text-[rgb(209,209,209)]">
           <div className="pr-6">
-            {!isOpen && <IoLogoApple color={'rgb(209,209,209)'} size={20}/>}
+            {!isOpen && 
+              <Link to="/">
+                <IoLogoApple 
+                  color={'rgb(209,209,209)'} 
+                  size={20} 
+                  className="cursor-pointer"
+                />
+              </Link>
+            }
           </div>
           <div className="hidden lg:flex lg:items-center lg:gap-6 lg:text-sm lg:font-semibold">
-            <li>Store</li>
-            <Link to="/macbook-air"><li>Mac</li></Link>
-            <li>iPad</li>
-            <li>iPhone</li>
-            <li>Watch</li>
-            <li>AirPods</li>
-            <li>TV & Home</li>
-            <li>Entertainment</li>
-            <li>Accessories</li>
-            <li>Support</li>
+            <Link to="#"><li>Store</li></Link>
+            <Link to="#"><li>Mac</li></Link>
+            <Link to="#"><li>iPad</li></Link>
+            <Link to="#"><li>iPhone</li></Link>
+            <Link to="#"><li>Watch</li></Link>
+            <Link to="#"><li>AirPods</li></Link>
+            <Link to="#"><li>TV & Home</li></Link>
+            <Link to="#"><li>Entertainment</li></Link>
+            <Link to="#"><li>Accessories</li></Link>
+            <Link to="#"><li>Support</li></Link>
           </div>
           <div className="flex items-center ml-6"> 
             {!isOpen && 
               <div className="flex gap-5">
-                <IoIosSearch color={'rgb(209,209,209)'} size={22}/>
-                <IoBagOutline color={'rgb(209,209,209)'} size={20}/>
+                <IoIosSearch color={'rgb(209,209,209)'} size={22} className="cursor-pointer"/>
+                <IoBagOutline color={'rgb(209,209,209)'} size={20} className="cursor-pointer"/>
               </div>
             }
             <div className="block ml-2 lg:hidden">
